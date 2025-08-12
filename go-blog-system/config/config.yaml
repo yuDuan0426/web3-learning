@@ -1,0 +1,24 @@
+# 应用配置
+app:
+  name: "go-blog-system"
+  port: 8080
+  mode: "development" # development, production
+  jwt_secret: "your-secret-key"
+  jwt_expiration: 24 # hours
+
+# 数据库配置
+database:
+  driver: "mysql"
+  host: "localhost"
+  port: 3306
+  username: "root"
+  password: "Dy950426"
+  dbname: "go_blog"
+  params: "charset=utf8mb4&parseTime=True&loc=Local"
+
+# 日志配置
+logger:
+  level: "debug" # debug, info, warn, error
+  format: "text" # text, json
+  output: "stdout" # stdout, file
+  file: "logs/app.log" # 如果output为file，则使用此路径

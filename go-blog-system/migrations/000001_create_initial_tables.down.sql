@@ -1,0 +1,6 @@
+-- 按照依赖关系的反序删除表
+DROP TABLE IF EXISTS post_tags;
+DROP TABLE IF EXISTS tags;
+DROP TABLE IF EXISTS comments;
+DROP TABLE IF EXISTS posts;
+DROP TABLE IF EXISTS users;
